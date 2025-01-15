@@ -56,7 +56,7 @@ class Pizza(db.Model, SerializerMixin):
 
     # add serialization rules
 
-    serialize_rules = ('-restaurant_pizzas.pizza',)
+    serialize_rules = ('-restaurant_pizzas',)
 
     def __repr__(self):
         return f"<Pizza {self.name}, {self.ingredients}>"
